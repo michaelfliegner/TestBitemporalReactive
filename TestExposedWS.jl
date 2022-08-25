@@ -25,4 +25,9 @@ route("/") do
     html(ui(model), context=@__MODULE__)
 end
 
+Genie.config.websockets_port = 8001
+Genie.config.websockets_exposed_port = 443
+Genie.config.websockets_exposed_host = "8001-$(replace(ENV["GITPOD_WORKSPACE_URL"],"https://"=> ""))"
+
+
 Genie.isrunning(:webserver) || up()
