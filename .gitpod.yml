@@ -1,11 +1,14 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - init: echo 'PATH_add /home/gitpod/julia-1.6.7/bin' > /workspace/.envrc
+  - init: echo 'PATH_add /home/gitpod/julia-1.6.7/bin' > /workspace/.envrc \
+          && echo 'PATH_add /home/gitpod/julia-1.6.7/bin' > /workspace/.envrc \
+          && echo 'export SEARCHLIGHT_PORT="5432"' >> /workspace/.envrc \
+          && echo 'export SEARCHLIGHT_DATABASE="postgres"' >> /workspace/.envrc \
+          && echo 'export SEARCHLIGHT_USERNAME="postgres"' >> /workspace/.envrc \
+          && echo 'export SEARCHLIGHT_PASSWORD="postgres"' >> /workspace/.envrc 
           
-  - command: julia -e 'using Pkg; Pkg.add("IJulia"); Pkg.build("IJulia")'
-  - command: ls -al /workspace/
- 
+  - command: julia -e 'using Pkg; Pkg.instantiate()' 
 ports:
   - name: postgres
     description: data base server

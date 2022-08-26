@@ -84,12 +84,6 @@ git-tree-sha1 = "46327a0a2af8a53de4a7ae19239719c96b37fca9"
 uuid = "e513cd14-23e6-48df-acf1-d9bc8fa5674b"
 version = "1.2.0"
 
-[[BitemporalReactive]]
-deps = ["BitemporalPostgres", "DataFrames", "Genie", "HTTP", "Intervals", "JSON", "LifeInsuranceDataModel", "LifeInsuranceProduct", "Logging", "Revise", "SearchLight", "SearchLightPostgreSQL", "Stipple", "StippleUI", "Test", "TimeZones", "ToStruct"]
-git-tree-sha1 = "1efcf3a552b4d71eb3f8b59e657e555d4eb3a931"
-uuid = "2fc36f50-c0f6-442e-a77c-cf0acc93eef6"
-version = "0.1.12"
-
 [[Bzip2_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
 git-tree-sha1 = "19a35467a82e236ff51bc17a3a44b69ef35185a2"
@@ -1201,9 +1195,9 @@ version = "0.4.7"
 
 [[Yields]]
 deps = ["BSplineKit", "FinanceCore", "ForwardDiff", "LinearAlgebra", "LsqFit", "Optim", "Reexport", "Roots", "UnicodePlots"]
-git-tree-sha1 = "4beefc53fdab71a71d83a074a3de531895218a6b"
+git-tree-sha1 = "9fb278d913ac38eb62662b525a98d64b4321680c"
 uuid = "d7e99b2f-e7f3-4d9e-9f01-2338fc023ad3"
-version = "3.2.1"
+version = "3.3.0"
 
 [[Zlib_jll]]
 deps = ["Libdl"]

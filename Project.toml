@@ -1,9 +1,9 @@
 [deps]
 BitemporalPostgres = "e513cd14-23e6-48df-acf1-d9bc8fa5674b"
-BitemporalReactive = "2fc36f50-c0f6-442e-a77c-cf0acc93eef6"
 Genie = "c43c736e-a2d1-11e8-161f-af95117fbd1e"
 JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 LifeInsuranceDataModel = "4892898e-25d7-46ce-b5c3-dea2164303ac"
+LifeInsuranceProduct = "492f22fc-54e6-4f0f-bb9b-bacd199f5046"
 Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
 SearchLight = "340e8cb6-72eb-11e8-37ce-c97ebeb32050"
 SearchLightPostgreSQL = "4327cdd6-4902-11ea-0272-430cea0431bd"
