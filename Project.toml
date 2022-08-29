@@ -1,7 +1,7 @@
 name = "BitemporalReactive"
 uuid = "2fc36f50-c0f6-442e-a77c-cf0acc93eef6"
 authors = ["michaelfliegner <michelkannfliegen@gmail.com>"]
-version = "0.2`"
+version = "0.2"
 
 [deps]
 BitemporalPostgres = "e513cd14-23e6-48df-acf1-d9bc8fa5674b"
