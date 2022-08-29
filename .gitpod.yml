@@ -6,7 +6,7 @@ tasks:
           && echo 'export SEARCHLIGHT_USERNAME="gitpod"' >> /workspace/.envrc \
           && direnv allow /workspace
           
-  - command: julia -e 'using Pkg; Pkg.activate("."); Pkg.instantiate(".");include("testsCreateContract.jl")' 
+  - command: julia -e 'using Pkg; Pkg.activate("."); Pkg.instantiate();include("testsCreateContract.jl")' 
 ports:
   - name: postgres
     description: data base server
