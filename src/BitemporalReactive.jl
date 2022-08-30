@@ -1,6 +1,6 @@
 module BitemporalReactive
 using BitemporalPostgres, JSON, SearchLight, Stipple, StippleUI, TimeZones, ToStruct
-using LifeInsuranceDataModel, LifeInsuranceProduct
+using LifeInsuranceDataModel, LifeInsuranceProduct, Logging
 include("ContractSectionView.jl")
 using .ContractSectionView
 
@@ -151,6 +151,11 @@ run
 creating the route
 """
 function run()
+    Genie.config.log_level= Logging.Info
+    Genie.config.log_to_file=true
+    Genie.config.log_requests=true
+    Genie.config.server_host = "127.0.0.1"
+    Genie.config.server_port = 8000
     Genie.config.websockets_port = 8001
     Genie.config.websockets_host = "127.0.0.1"
     if (haskey(ENV, "GITPOD_REPO_ROOT"))
@@ -168,7 +173,7 @@ function run()
         redirect("/ContractSection")
     end
     println("huhu")
-    Genie.up()
+    Stipple.up()
 end
 
 end
