@@ -3,6 +3,8 @@ image:
 tasks:
   - init: echo 'PATH_add /home/gitpod/julia-1.6.7/bin' > /workspace/.envrc \
           && echo 'PATH_add /home/gitpod/julia-1.6.7/bin' > /workspace/.envrc \
+          && echo 'export SEARCHLIGHT_PORT="5432"' >> /workspace/.envrc \
+          && echo 'export SEARCHLIGHT_DATABASE="postgres"' >> /workspace/.envrc \
           && echo 'export SEARCHLIGHT_USERNAME="gitpod"' >> /workspace/.envrc \
           && direnv allow /workspace
           
