@@ -173,7 +173,20 @@ function run()
         redirect("/ContractSection")
     end
     println("huhu")
-    Stipple.up()
-end
+    Genie.Server.up(8000,"127.0.0.1",8001,true)
+    #port::Int,
+    #        host::String = Genie.config.server_host;
+    #        ws_port::Int = port,
+#
+    #        async::Bool = ! Genie.config.run_as_server,
+    #        verbose::Bool = false,
+#
+    #        ratelimit::Union{Rational{Int},Nothing} = nothing,
+    #        server::Union{Sockets.TCPServer,Nothing} = nothing,
+    #        wsserver::Union{Sockets.TCPServer,Nothing} = server,
+    #        open_browser::Bool = false,
+    #        reuseaddr::Bool = Distributed.nworkers() > 1,
+    #        http_kwargs...) :: ServersCollection
+end#
 
 end
